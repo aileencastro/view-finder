@@ -13,7 +13,7 @@
         <!--View Finder-->
         <scene sceneID="2tv-22-pSw">
             <objects>
-                <tableViewController id="OXg-f2-fMU" sceneMemberID="viewController">
+                <tableViewController id="OXg-f2-fMU" customClass="PhotoTableViewController" customModule="ViewFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="akw-Wn-Owk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,6 +37,7 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="2f5-Vw-ttZ"/>
                         <barButtonItem key="rightBarButtonItem" title="Item" systemItem="add" id="CO9-jo-Fb5">
                             <connections>
+                                <action selector="addButton:" destination="OXg-f2-fMU" id="8Oy-Wa-4qs"/>
                                 <segue destination="Lbv-TW-Lnc" kind="show" id="Zip-Rl-F1f"/>
                             </connections>
                         </barButtonItem>
@@ -75,6 +76,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="savePhotoTapped:" destination="Lbv-TW-Lnc" eventType="touchUpInside" id="sfX-3Q-rme"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOA-BD-hKO">
                                 <rect key="frame" x="149" y="822" width="116" height="36"/>
@@ -103,6 +107,10 @@
                         <viewLayoutGuide key="safeArea" id="Q8h-D8-qBr"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add New Photo" id="K0l-kA-RMd"/>
+                    <connections>
+                        <outlet property="captionText" destination="Xk7-bO-e8v" id="vVJ-QR-6Uq"/>
+                        <outlet property="newImageView" destination="Jnq-qM-hlC" id="5iq-jj-hBC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L31-Mr-BVV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
