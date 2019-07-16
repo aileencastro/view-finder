@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1803B26722DE52E70041BE85 /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1803B26622DE52E70041BE85 /* PhotoDetailViewController.swift */; };
 		180950AB22DD1A4F009E6F3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180950AA22DD1A4F009E6F3F /* AppDelegate.swift */; };
 		180950B022DD1A4F009E6F3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180950AE22DD1A4F009E6F3F /* Main.storyboard */; };
 		180950B322DD1A4F009E6F3F /* ViewFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 180950B122DD1A4F009E6F3F /* ViewFinder.xcdatamodeld */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1803B26622DE52E70041BE85 /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
 		180950A722DD1A4F009E6F3F /* ViewFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		180950AA22DD1A4F009E6F3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		180950AF22DD1A4F009E6F3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			children = (
 				180950AA22DD1A4F009E6F3F /* AppDelegate.swift */,
 				180950AE22DD1A4F009E6F3F /* Main.storyboard */,
+				1803B26622DE52E70041BE85 /* PhotoDetailViewController.swift */,
 				180950C122DD3B87009E6F3F /* PhotoTableViewController.swift */,
 				180950BF22DD2BFC009E6F3F /* AddPhotoViewController.swift */,
 				180950B422DD1A51009E6F3F /* Assets.xcassets */,
@@ -144,6 +147,7 @@
 				180950B322DD1A4F009E6F3F /* ViewFinder.xcdatamodeld in Sources */,
 				180950C022DD2BFC009E6F3F /* AddPhotoViewController.swift in Sources */,
 				180950C222DD3B87009E6F3F /* PhotoTableViewController.swift in Sources */,
+				1803B26722DE52E70041BE85 /* PhotoDetailViewController.swift in Sources */,
 				180950AB22DD1A4F009E6F3F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

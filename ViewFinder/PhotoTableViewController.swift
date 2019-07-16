@@ -65,7 +65,22 @@ class PhotoTableViewController: UITableViewController {
         getPhotos()
     }
     
-
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "detailSegue", sender: photos[indexPath.row])
+    }
+ 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "detailSegue"{
+            // need to get access to View Controller we want to move to
+            if let photoDetailView = segue.destination as? PhotoDetailViewController {
+                //now we need to say, whichever row was tapped, take that photo
+                //and send it to the over view
+                if let photoToSend = sender as? Photos {
+                    photoDetailView.photo = photoToSend
+                }
+            }
+        }
+    }
    
     /*
     // Override to support conditional editing of the table view.
